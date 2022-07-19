@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: linear-gradient(90deg, rgba(19, 36, 0, 1) 0%, rgba(9, 92, 121, 1) 46%, rgba(0, 255, 171, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container .box{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+@media(max-width:850px){
+    .container .box {
+        flex-direction: column;
+    }
+}
+
+.container .box .left{
+    flex: 1;
+    padding: 100px;
+}
+@media(max-width:850px){
+    .container .box .left {
+        padding: 50px;
+    }
+}
+
+.container .box .right{
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+}
+
+.container .box .right .entries{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .box .right .entries .email,
+.container .box .right .entries .password{
+    background-color: #eeeeee;
+}
+
+.container .box .right .entries .email{
+    position: relative;
+    margin-top: 20px;
+}
+
+.container .box .right .entries .email .indicator{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #555;
+}
+
+.container .box .right .entries .email .indicator.valid{
+    background-color: #0f0;
+    box-shadow: 0 0 5px #0f0,
+    0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 40px #0f0;
+}
+.container .box .right .entries .email .indicator.Invalid{
+    background-color: #f00;
+    box-shadow: 0 0 5px #f00,
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 40px #f00;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+.container .box .right .entries .password{
+    position: relative;
+}
+
+.container .box .right .entries .password #eye{
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 10px;
+    cursor: pointer;
+    color: #7a797e;
+}
+
+
+.container .box .right .entries .email i,
+.container .box .right .entries .password i{
+    margin-right: 2px;
+}
+.container .box .right .entries .email input,
+.container .box .right .entries .password input{
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+
+.container .box .right .entries .email,
+.container .box .right .entries .password,
+.container .box .right .entries .login{
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    width: 240px;
+}
+
+.container .box .right .entries .login{
+    background-color: #57b847;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    width: 280px;
+}
+
+.container .box .right .entries .forgot{
+    color: #838383;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}

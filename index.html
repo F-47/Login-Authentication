@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Library -->
+    <script
+      src="https://kit.fontawesome.com/ccfa29ce82.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Title -->
+    <title>Login Authentication</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="left">
+          <div class="logo">
+            <img src="Images/logo.png" alt="" />
+          </div>
+        </div>
+        <div class="right">
+          <form action="" id="form">
+            <div class="entries">
+              <h1>User Login</h1>
+              <div class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Email Id"
+                  onkeyup="validate();"
+                />
+                <span class="indicator"></span>
+              </div>
+              <div class="password">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" id="password" />
+                <i class="fa-solid fa-eye" id="eye" onclick="toggle()"></i>
+              </div>
+              <button class="login">Login</button>
+              <button class="forgot">Forgot Username /Password?</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
